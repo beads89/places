@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Travel Log_
 
-#### By _**{List of contributors}**_
+#### By _**Brandon Eads and Anna Clarke**_
 
 ---
 
