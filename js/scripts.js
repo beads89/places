@@ -36,12 +36,12 @@ TravelLog.prototype.findDestination = function(id) {
 
 function Destination(location, landmark, timeOfYear, notes) {
   this.location = location;
-  this.landmark = [];
-  this.landmark.push(landmark);
-  this.timeOfYear = [];
-  this.timeOfYear.push(timeOfYear);
-  this.notes = [];
-  this.notes.push(notes);
+  this.landmark = [landmark];
+  // this.landmark.push(landmark);
+  this.timeOfYear = [timeOfYear];
+  // this.timeOfYear.push(timeOfYear);
+  this.notes = [notes];
+  // this.notes.push(notes);
   this.timesVisited = 1;
 }
 
