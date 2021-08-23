@@ -62,7 +62,7 @@ function displayDestination(travelLogToDisplay) {
   let htmlDestinationInfo = "";
   Object.keys(travelLogToDisplay.location).forEach(function(key) {
     const destinationDisplay = travelLogToDisplay.findDestination(key);
-    htmlDestinationInfo += "<li class='click' id=" + location.id + ">" + destinationDisplay.location + "</li>";
+    htmlDestinationInfo += "<li class='click' id=" + location.id + ">" + destinationDisplay.location + "</li> <ul class='destinationInfo'> <li>" + destinationDisplay.landmark + "</li> <li>" + destinationDisplay.timeOfYear + "</li> <li>" + destinationDisplay.notes + "</li> </ul>";
   });
   destinationName.html(htmlDestinationInfo);
 }
@@ -81,9 +81,9 @@ $(document).ready(function() {
     console.log(travelLog);
   });
 
-//   $("li").click(function() {
-//     
-//   })
+  $(".click").click(function() {
+    $(".destinationInfo").show();
+  });
 });
 
 // let newYork = new Destination("New York", "Times Square", "Summer", "Crowded and expensive");
